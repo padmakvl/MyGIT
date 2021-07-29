@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<!--
+ Copyright (c) 1998, 2016, Oracle. All rights reserved.
+-->
+<project>
+  <target name="zip_osm_grafana_samples">
+	<zip destfile="D:\GrafanaSamplesZip\osm_grafana_samples.zip">
+		<fileset dir="D:\MySVN\Test\trunk\Grafana\Samples">
+			<include name="**/*.json" />
+		</fileset>
+    </zip>
+  </target>
+  
+  <target name="unzip_osm_grafana_samples">
+	<unzip src="D:\GrafanaSamplesZip\osm_grafana_samples.zip" dest="C:\Users\PVUSUVAN\Documents\GitHub\MyGIT\Samples\Grafana"/>
+  </target>
+</project>
